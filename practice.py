@@ -76,7 +76,7 @@ print(remove_duplicates([2, 3, 2, 4, 5, 3, 6, 7, 5]))
 def word_frequency(sentence):
     count = {}
 
-    a = sentence.lower().split()
+    a = sentence.lower().replace(".", " ").split()
     for i in a:
         if i in count:
             count[i] += 1
